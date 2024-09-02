@@ -3,5 +3,42 @@
   "extends": [
     "config:recommended",
     "group:allNonMajor"
+  ],
+  "reviewers": ["team:foo"],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "Github Action",
+      "labels": ["github_actions"],
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "matchManagers": ["npm", "nvm"],
+      "groupName": "Website",
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "matchManagers": ["gomod"],
+      "groupName": "golang",
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    }
   ]
 }

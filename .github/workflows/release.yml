@@ -2,8 +2,8 @@ name: goreleaser
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - gorelease
 
 jobs:
   goreleaser:
@@ -21,6 +21,6 @@ jobs:
         uses: goreleaser/goreleaser-action@v2
         with:
           version: latest
-          args: release --clean
+          args: release --clean --snapshot -f .goreleaser-nighly.yml
         env:
           GITHUB_TOKEN: ${{secrets.GH_PAT}}

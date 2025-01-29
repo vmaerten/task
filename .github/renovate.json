@@ -6,6 +6,9 @@
     "schedule:weekly",
     ":semanticCommitTypeAll(chore)"
   ],
+    "constraints": {
+    "go": "1.22"
+  },
   "mode": "full",
   "reviewers": ["team:developer"],
   "packageRules": [

@@ -9,13 +9,13 @@
     "constraints": {
     "go": "1.22"
   },
+"addLabels":["area: dependencies"],
   "mode": "full",
-  "reviewers": ["team:developer"],
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
       "groupName": "Github Action",
-      "labels": ["area: github actions", "area: dependencies"],
+      "addLabels": ["area: github actions"],
       "matchPackageNames": [
         "*"
       ],
@@ -27,7 +27,7 @@
     {
       "matchManagers": ["npm", "nvm"],
       "groupName": "Website",
-      "labels": ["lang: javascript", "area: dependencies"],
+      "addLabels": ["lang: javascript"],
       "matchPackageNames": [
         "*"
       ],
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "matchManagers": ["gomod"],
+      "matchCategories": ["golang"],
       "groupName": "golang",
-      "labels": ["lang: go", "area: dependencies"],
+      "addLabels": ["lang: go"],
       "matchPackageNames": [
         "*"
       ],

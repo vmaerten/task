@@ -2,7 +2,7 @@ module github.com/go-task/task/v3
 
 go 1.22.0
 
-toolchain go1.22.0
+toolchain go1.23.5
 
 require (
 	github.com/Ladicle/tabwriter v1.0.0

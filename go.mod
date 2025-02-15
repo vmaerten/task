@@ -2,7 +2,7 @@ module github.com/go-task/task/v3
 
 go 1.22.0
 
-toolchain go1.22.0
+toolchain go1.24.0
 
 require (
 	github.com/Ladicle/tabwriter v1.0.0
@@ -23,11 +23,11 @@ require (
 	github.com/otiai10/copy v1.14.1
 	github.com/radovskyb/watcher v1.0.7
 	github.com/sajari/fuzzy v1.0.0
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/pflag v1.0.6
 	github.com/stretchr/testify v1.10.0
 	github.com/zeebo/xxh3 v1.0.2
-	golang.org/x/sync v0.10.0
-	golang.org/x/term v0.28.0
+	golang.org/x/sync v0.11.0
+	golang.org/x/term v0.29.0
 	gopkg.in/yaml.v3 v3.0.1
 	mvdan.cc/sh/v3 v3.10.0
 )

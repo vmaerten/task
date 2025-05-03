@@ -9,11 +9,9 @@
   "mode": "full",
   "addLabels":["area: dependencies"],
   "vulnerabilityAlerts": {
-    "enabled": true,
-    "prCreation": "immediate",
-    "labels": ["security"],
-    "schedule": []
+    "enabled": true
   },
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
